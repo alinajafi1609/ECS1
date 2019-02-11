@@ -11,7 +11,7 @@ namespace Electrical_Circuit_Simulator
         private Bitmap Bmp;
         private Point BmpLoc;
         string ComponentNameLabel;
-        Circuit circut;
+        Circuit circuit;
 
         //true if point1 must be updated
         //false if point2 must be updated
@@ -24,7 +24,7 @@ namespace Electrical_Circuit_Simulator
             //Circuit Symbols
             //this.bulbToolStripMenuItem.Click += new System.EventHandler(this.bulbToolStripMenuItem_Click);
             ComponentNameLabel = InputName;
-            circut = new Circuit();
+            circuit = new Circuit();
         }
 
 
@@ -59,7 +59,7 @@ namespace Electrical_Circuit_Simulator
 
         private void calc_Click(object sender, EventArgs e)
         {
-            circut.caclucate();
+            circuit.caclucate();
         }
         public void StartGame()
         {
@@ -123,9 +123,9 @@ namespace Electrical_Circuit_Simulator
         string FileLocation = "";
         private void resistorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var InputResistors = new Input_Resistors(circut);
+            var InputResistors = new Input_Resistors(circuit);
             InputResistors.Show();
-            FileLocation = "C:\\Users\\Ali Najafi\\Desktop\\Electrical Circuit Simulator\\Electrical Circuit Simulator\\Electrical_Circuit_Simulator\\Resources\\ResistorCS.png";
+            FileLocation = ".\\..\\..\\..\\Resources\\ResistorCS.png";
             Bmp = new Bitmap(FileLocation);
             BmpLoc = new Point(POINT.X, POINT.Y);
             Rectangle R = new Rectangle(BmpLoc, Bmp.Size);
@@ -134,9 +134,9 @@ namespace Electrical_Circuit_Simulator
 
         private void variableResistorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var InputResistors = new Input_Resistors(circut);
+            var InputResistors = new Input_Resistors(circuit);
             InputResistors.Show();
-            FileLocation = "C:\\Users\\Ali Najafi\\Desktop\\Electrical Circuit Simulator\\Electrical Circuit Simulator\\Electrical_Circuit_Simulator\\Resources\\VRCS.png";
+            FileLocation = ".\\..\\..\\..\\Resources\\VRCS.png";
             Bmp = new Bitmap(FileLocation);
             BmpLoc = new Point(POINT.X, POINT.Y);
             Rectangle R = new Rectangle(BmpLoc, Bmp.Size);
@@ -145,9 +145,9 @@ namespace Electrical_Circuit_Simulator
 
         private void cellToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var InputPower = new Input_Power_Supply();
+            var InputPower = new Input_Power_Supply(circuit);
             InputPower.Show();
-            FileLocation = "C:\\Users\\Ali Najafi\\Desktop\\Electrical Circuit Simulator\\Electrical Circuit Simulator\\Electrical_Circuit_Simulator\\Resources\\CellCS.png";
+            FileLocation = ".\\..\\..\\..\\Resources\\CellCS.png";
             Bmp = new Bitmap(FileLocation);
             BmpLoc = new Point(POINT.X, POINT.Y);
             Rectangle R = new Rectangle(BmpLoc, Bmp.Size);
@@ -156,9 +156,9 @@ namespace Electrical_Circuit_Simulator
 
         private void batteryToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var InputPower = new Input_Power_Supply();
+            var InputPower = new Input_Power_Supply(circuit);
             InputPower.Show();
-            FileLocation = "C:\\Users\\Ali Najafi\\Desktop\\Electrical Circuit Simulator\\Electrical Circuit Simulator\\Electrical_Circuit_Simulator\\Resources\\BatteryCS.png";
+            FileLocation = ".\\..\\..\\..\\Resources\\BatteryCS.png";
             Bmp = new Bitmap(FileLocation);
             Rectangle R = new Rectangle(BmpLoc, Bmp.Size);
             this.Invalidate(R);
@@ -188,10 +188,9 @@ namespace Electrical_Circuit_Simulator
 
         private void bulbToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var InputResistors = new Input_Resistors(circut);
+            var InputResistors = new Input_Resistors(circuit);
             InputResistors.Show();
-            BULB bulb = new BULB();
-            FileLocation = "C:\\Users\\Ali Najafi\\Desktop\\Electrical Circuit Simulator\\Electrical Circuit Simulator\\Electrical_Circuit_Simulator\\Resources\\BULBCS.png";
+            FileLocation = ".\\..\\..\\..\\Resources\\BULBCS.png";
             Bmp = new Bitmap(FileLocation);
             BmpLoc = new Point(POINT.X, 80);
             Rectangle R = new Rectangle(BmpLoc, Bmp.Size);
@@ -206,7 +205,7 @@ namespace Electrical_Circuit_Simulator
 
         private void voltmeterToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FileLocation = "C:\\Users\\Ali Najafi\\Desktop\\Electrical Circuit Simulator\\Electrical Circuit Simulator\\Electrical_Circuit_Simulator\\Resources\\VoltMeterCS.png";
+            FileLocation = ".\\..\\..\\..\\Resources\\VoltMeterCS.png";
             Bmp = new Bitmap(FileLocation);
             BmpLoc = new Point(POINT.X, POINT.Y);
             Rectangle R = new Rectangle(BmpLoc, Bmp.Size);
@@ -215,7 +214,7 @@ namespace Electrical_Circuit_Simulator
 
         private void ammeterToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FileLocation = "C:\\Users\\Ali Najafi\\Desktop\\Electrical Circuit Simulator\\Electrical Circuit Simulator\\Electrical_Circuit_Simulator\\Resources\\AmmeterCS.png";
+            FileLocation = ".\\..\\..\\..\\Resources\\AmmeterCS.png";
             Bmp = new Bitmap(FileLocation);
             BmpLoc = new Point(POINT.X, POINT.Y);
             Rectangle R = new Rectangle(BmpLoc, Bmp.Size);

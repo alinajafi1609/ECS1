@@ -1,20 +1,20 @@
 ﻿namespace Electrical_Circuit_Simulator
 {
-    public class Component
+    public class ComponentResistors
     {
-        public Component(double res, double pd, string pos, string name)
+        public ComponentResistors(double res, double pd, string pos, string name)
         {
             Res = res;
             Vol = pd;
             Name = name;
-            Pos = pos;
+            PoS = pos;
 
         }
 
         public double Res { get; set; }
         public double Vol { get; set; }
         public string Name { get; set; }
-        public string Pos { get; set; }
+        public string PoS { get; set; }
 
     }
 }

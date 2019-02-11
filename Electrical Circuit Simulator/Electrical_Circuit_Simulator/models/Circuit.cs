@@ -4,17 +4,20 @@ namespace Electrical_Circuit_Simulator
 {
     public class Circuit
     {
-        public List<Component> ComponentList { get; }
+        public List<ComponentResistors> ComponentResistorList { get; }
+        public List<ComponentPowerSource> ComponentPowerSourceList { get; }
         public Circuit()
         {
-            ComponentList = new List<Component>();
+            ComponentResistorList = new List<ComponentResistors>();
+            ComponentPowerSourceList = new List<ComponentPowerSource>();
         }
 
         public double caclucate()
+
         {
-            foreach(Component c in ComponentList)
+            foreach(ComponentResistors c in ComponentResistorList)
             {
-                if(c.Pos == "p")
+                if(c.PoS == "p")
                 {
 
                 }

@@ -1,21 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace Electrical_Circuit_Simulator
+﻿namespace Electrical_Circuit_Simulator
 {
-    class PowerSources
+    public class ComponentPowerSource
     {
-        int Volts;
-        int IR;
-        char POrS;
-        public PowerSources(int Volts, int IR, char POrS)
+        public ComponentPowerSource(double Volt, double InternalResistance, string name)
         {
-            this.Volts = Volts;
-            this.IR = IR;
-            this.POrS = POrS;
+            Volts = Volt;
+            IR = InternalResistance;
+            name = Name;
 
         }
+        public double IR { get; set; }
+        public double Volts { get; set; }
+        public string Name { get; set; }
     }
 }

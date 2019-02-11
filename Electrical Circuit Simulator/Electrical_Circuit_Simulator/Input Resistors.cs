@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace Electrical_Circuit_Simulator
@@ -42,8 +36,8 @@ namespace Electrical_Circuit_Simulator
         //{
         //    Voltage = Convert.ToDouble(SVoltage);
         //}
-        var component = new Component(Resistance, Voltage, PorS, name);
-        cir.ComponentList.Add(component);
+        var component = new ComponentResistors(Resistance, Voltage, PorS, name);
+        cir.ComponentResistorList.Add(component);
         Console.WriteLine("");
     }
 
@@ -76,6 +70,11 @@ namespace Electrical_Circuit_Simulator
         string PorS = posTextBox.Text;
 
     }
-}
+
+        private void Input_Resistors_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
 

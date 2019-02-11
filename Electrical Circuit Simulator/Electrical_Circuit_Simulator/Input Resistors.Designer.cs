@@ -67,26 +67,26 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Connected to the Power Supply in P or S";
             // 
-            // textBox1
+            // voltageTexBox
             // 
             this.voltageTexBox.Location = new System.Drawing.Point(18, 100);
-            this.voltageTexBox.Name = "textBox1";
+            this.voltageTexBox.Name = "voltageTexBox";
             this.voltageTexBox.Size = new System.Drawing.Size(41, 20);
             this.voltageTexBox.TabIndex = 4;
             this.voltageTexBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // resTextBox
             // 
             this.resTextBox.Location = new System.Drawing.Point(89, 100);
-            this.resTextBox.Name = "textBox2";
+            this.resTextBox.Name = "resTextBox";
             this.resTextBox.Size = new System.Drawing.Size(59, 20);
             this.resTextBox.TabIndex = 5;
             this.resTextBox.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // textBox3
+            // posTextBox
             // 
             this.posTextBox.Location = new System.Drawing.Point(187, 100);
-            this.posTextBox.Name = "textBox3";
+            this.posTextBox.Name = "posTextBox";
             this.posTextBox.Size = new System.Drawing.Size(172, 20);
             this.posTextBox.TabIndex = 6;
             this.posTextBox.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
@@ -100,15 +100,6 @@
             this.button1.Text = "Enter";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Enter_Click);
-
-            //do same thing for calc button
-            //this.button1.Location = new System.Drawing.Point(145, 139);
-            //this.button1.Name = "button1";
-            //this.button1.Size = new System.Drawing.Size(83, 37);
-            //this.button1.TabIndex = 7;
-            //this.button1.Text = "Enter";
-            //this.button1.UseVisualStyleBackColor = true;
-            //this.button1.Click += new System.EventHandler(this.Enter_Click);
             // 
             // label4
             // 
@@ -119,10 +110,10 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Enter the name of the component:\r\n";
             // 
-            // textBox4
+            // nameTextBox
             // 
             this.nameTextBox.Location = new System.Drawing.Point(33, 27);
-            this.nameTextBox.Name = "textBox4";
+            this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(326, 20);
             this.nameTextBox.TabIndex = 9;
             this.nameTextBox.Text = "-";
@@ -155,7 +146,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Input_Resistors";
             this.Text = "Input Values";
-            //this.Load += new System.EventHandler(this.Input_Resistors_Load);
+            this.Load += new System.EventHandler(this.Input_Resistors_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
