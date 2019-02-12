@@ -38,6 +38,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.nameTextBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -52,7 +54,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(86, 75);
+            this.label2.Location = new System.Drawing.Point(65, 75);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(62, 15);
             this.label2.TabIndex = 2;
@@ -61,15 +63,16 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(155, 75);
+            this.label3.Location = new System.Drawing.Point(133, 75);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(226, 15);
+            this.label3.Size = new System.Drawing.Size(115, 15);
             this.label3.TabIndex = 3;
-            this.label3.Text = "Connected to the Power Supply in P or S";
+            this.label3.Text = "Connected in P or S";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // voltageTexBox
             // 
-            this.voltageTexBox.Location = new System.Drawing.Point(18, 100);
+            this.voltageTexBox.Location = new System.Drawing.Point(15, 100);
             this.voltageTexBox.Name = "voltageTexBox";
             this.voltageTexBox.Size = new System.Drawing.Size(41, 20);
             this.voltageTexBox.TabIndex = 4;
@@ -77,7 +80,7 @@
             // 
             // resTextBox
             // 
-            this.resTextBox.Location = new System.Drawing.Point(89, 100);
+            this.resTextBox.Location = new System.Drawing.Point(68, 100);
             this.resTextBox.Name = "resTextBox";
             this.resTextBox.Size = new System.Drawing.Size(59, 20);
             this.resTextBox.TabIndex = 5;
@@ -85,9 +88,9 @@
             // 
             // posTextBox
             // 
-            this.posTextBox.Location = new System.Drawing.Point(187, 100);
+            this.posTextBox.Location = new System.Drawing.Point(150, 100);
             this.posTextBox.Name = "posTextBox";
-            this.posTextBox.Size = new System.Drawing.Size(172, 20);
+            this.posTextBox.Size = new System.Drawing.Size(78, 20);
             this.posTextBox.TabIndex = 6;
             this.posTextBox.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
@@ -128,11 +131,30 @@
             this.label5.TabIndex = 20;
             this.label5.Text = "Enter a \"?\" for the value you want to work out.";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(279, 75);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(53, 15);
+            this.label6.TabIndex = 21;
+            this.label6.Text = "Junction";
+            // 
+            // junction
+            // 
+            this.textBox1.Location = new System.Drawing.Point(272, 100);
+            this.textBox1.Name = "junctionTextBox";
+            this.textBox1.Size = new System.Drawing.Size(71, 20);
+            this.textBox1.TabIndex = 22;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
+            // 
             // Input_Resistors
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(393, 187);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.nameTextBox);
             this.Controls.Add(this.label4);
@@ -164,5 +186,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox nameTextBox;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

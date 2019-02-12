@@ -9,6 +9,7 @@ namespace Electrical_Circuit_Simulator
     double Resistance;
     string name;
     string PorS;
+    int Junction;
     Circuit cir;
 
     public Input_Resistors(Circuit circut)
@@ -74,6 +75,17 @@ namespace Electrical_Circuit_Simulator
         private void Input_Resistors_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+            string JunctionS = textBox1.Text;
+            Junction = Convert.ToInt16(JunctionS);
         }
     }
 }

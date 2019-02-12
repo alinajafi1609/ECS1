@@ -56,11 +56,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.ImageLocation = "C:\\Users\\Ali Najafi\\Desktop\\Electrical Circuit Simulator\\Electrical Circuit Simul" +
-    "ator\\Electrical_Circuit_Simulator\\Resources\\VoltMeterCS.png";
-            this.pictureBox1.Location = new System.Drawing.Point(245, 424);
+            this.pictureBox1.ImageLocation = ".\\..\\..\\..\\Resources\\VoltMeterCS.png";
+            this.pictureBox1.Location = new System.Drawing.Point(245, 544);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(235, 77);
+            this.pictureBox1.Size = new System.Drawing.Size(235, 101);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 26;
             this.pictureBox1.TabStop = false;
@@ -69,11 +68,10 @@
             // BULB
             // 
             this.BULB.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BULB.ImageLocation = "C:\\Users\\Ali Najafi\\Desktop\\Electrical Circuit Simulator\\Electrical Circuit Simul" +
-    "ator\\Electrical_Circuit_Simulator\\Resources\\BULBCS.png";
+            this.BULB.ImageLocation = ".\\..\\..\\..\\Resources\\BULBCS.png";
             this.BULB.Location = new System.Drawing.Point(245, 4);
             this.BULB.Name = "BULB";
-            this.BULB.Size = new System.Drawing.Size(235, 77);
+            this.BULB.Size = new System.Drawing.Size(235, 101);
             this.BULB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BULB.TabIndex = 9;
             this.BULB.TabStop = false;
@@ -84,7 +82,7 @@
             this.AmmeterLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.AmmeterLabel.AutoSize = true;
             this.AmmeterLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AmmeterLabel.Location = new System.Drawing.Point(4, 536);
+            this.AmmeterLabel.Location = new System.Drawing.Point(4, 694);
             this.AmmeterLabel.Name = "AmmeterLabel";
             this.AmmeterLabel.Size = new System.Drawing.Size(234, 20);
             this.AmmeterLabel.TabIndex = 6;
@@ -97,7 +95,7 @@
             this.VoltmeterLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.VoltmeterLabel.AutoSize = true;
             this.VoltmeterLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VoltmeterLabel.Location = new System.Drawing.Point(4, 452);
+            this.VoltmeterLabel.Location = new System.Drawing.Point(4, 584);
             this.VoltmeterLabel.Name = "VoltmeterLabel";
             this.VoltmeterLabel.Size = new System.Drawing.Size(234, 20);
             this.VoltmeterLabel.TabIndex = 5;
@@ -110,7 +108,7 @@
             this.BatteryLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.BatteryLabel.AutoSize = true;
             this.BatteryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BatteryLabel.Location = new System.Drawing.Point(4, 368);
+            this.BatteryLabel.Location = new System.Drawing.Point(4, 476);
             this.BatteryLabel.Name = "BatteryLabel";
             this.BatteryLabel.Size = new System.Drawing.Size(234, 20);
             this.BatteryLabel.TabIndex = 4;
@@ -123,7 +121,7 @@
             this.CellLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.CellLabel.AutoSize = true;
             this.CellLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CellLabel.Location = new System.Drawing.Point(4, 284);
+            this.CellLabel.Location = new System.Drawing.Point(4, 368);
             this.CellLabel.Name = "CellLabel";
             this.CellLabel.Size = new System.Drawing.Size(234, 20);
             this.CellLabel.TabIndex = 3;
@@ -136,7 +134,7 @@
             this.VariableResistor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.VariableResistor.AutoSize = true;
             this.VariableResistor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VariableResistor.Location = new System.Drawing.Point(4, 200);
+            this.VariableResistor.Location = new System.Drawing.Point(4, 260);
             this.VariableResistor.Name = "VariableResistor";
             this.VariableResistor.Size = new System.Drawing.Size(234, 20);
             this.VariableResistor.TabIndex = 2;
@@ -149,7 +147,7 @@
             this.ResistorLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.ResistorLabel.AutoSize = true;
             this.ResistorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ResistorLabel.Location = new System.Drawing.Point(4, 116);
+            this.ResistorLabel.Location = new System.Drawing.Point(4, 152);
             this.ResistorLabel.Name = "ResistorLabel";
             this.ResistorLabel.Size = new System.Drawing.Size(234, 20);
             this.ResistorLabel.TabIndex = 1;
@@ -162,7 +160,7 @@
             this.BulbLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.BulbLabel.AutoSize = true;
             this.BulbLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.87629F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BulbLabel.Location = new System.Drawing.Point(4, 32);
+            this.BulbLabel.Location = new System.Drawing.Point(4, 44);
             this.BulbLabel.Name = "BulbLabel";
             this.BulbLabel.Size = new System.Drawing.Size(234, 20);
             this.BulbLabel.TabIndex = 0;
@@ -173,11 +171,10 @@
             // Resistor
             // 
             this.Resistor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Resistor.ImageLocation = "C:\\Users\\Ali Najafi\\Desktop\\Electrical Circuit Simulator\\Electrical Circuit Simul" +
-    "ator\\Electrical_Circuit_Simulator\\Resources\\ResistorCS.png";
-            this.Resistor.Location = new System.Drawing.Point(245, 88);
+            this.Resistor.ImageLocation = ".\\..\\..\\..\\Resources\\ResistorCS.png";
+            this.Resistor.Location = new System.Drawing.Point(245, 112);
             this.Resistor.Name = "Resistor";
-            this.Resistor.Size = new System.Drawing.Size(235, 77);
+            this.Resistor.Size = new System.Drawing.Size(235, 101);
             this.Resistor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Resistor.TabIndex = 11;
             this.Resistor.TabStop = false;
@@ -187,11 +184,10 @@
             // Variable
             // 
             this.Variable.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Variable.ImageLocation = "C:\\Users\\Ali Najafi\\Desktop\\Electrical Circuit Simulator\\Electrical Circuit Simul" +
-    "ator\\Electrical_Circuit_Simulator\\Resources\\VRCS.png";
-            this.Variable.Location = new System.Drawing.Point(245, 172);
+            this.Variable.ImageLocation = ".\\..\\..\\..\\Resources\\VRCS.png";
+            this.Variable.Location = new System.Drawing.Point(245, 220);
             this.Variable.Name = "Variable";
-            this.Variable.Size = new System.Drawing.Size(235, 77);
+            this.Variable.Size = new System.Drawing.Size(235, 101);
             this.Variable.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Variable.TabIndex = 13;
             this.Variable.TabStop = false;
@@ -199,11 +195,10 @@
             // Cell
             // 
             this.Cell.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Cell.ImageLocation = "C:\\Users\\Ali Najafi\\Desktop\\Electrical Circuit Simulator\\Electrical Circuit Simul" +
-    "ator\\Electrical_Circuit_Simulator\\Resources\\CELLCS.png";
-            this.Cell.Location = new System.Drawing.Point(245, 256);
+            this.Cell.ImageLocation = ".\\..\\..\\..\\Resources\\CELLCS.png";
+            this.Cell.Location = new System.Drawing.Point(245, 328);
             this.Cell.Name = "Cell";
-            this.Cell.Size = new System.Drawing.Size(235, 77);
+            this.Cell.Size = new System.Drawing.Size(235, 101);
             this.Cell.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Cell.TabIndex = 15;
             this.Cell.TabStop = false;
@@ -211,11 +206,10 @@
             // Battery
             // 
             this.Battery.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Battery.ImageLocation = "C:\\Users\\Ali Najafi\\Desktop\\Electrical Circuit Simulator\\Electrical Circuit Simul" +
-    "ator\\Electrical_Circuit_Simulator\\Resources\\BatteryCS.png";
-            this.Battery.Location = new System.Drawing.Point(245, 340);
+            this.Battery.ImageLocation = ".\\..\\..\\..\\Resources\\BatteryCS.png";
+            this.Battery.Location = new System.Drawing.Point(245, 436);
             this.Battery.Name = "Battery";
-            this.Battery.Size = new System.Drawing.Size(235, 77);
+            this.Battery.Size = new System.Drawing.Size(235, 101);
             this.Battery.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Battery.TabIndex = 17;
             this.Battery.TabStop = false;
@@ -223,11 +217,10 @@
             // pictureBox13
             // 
             this.pictureBox13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox13.ImageLocation = "C:\\Users\\Ali Najafi\\Desktop\\Electrical Circuit Simulator\\Electrical Circuit Simul" +
-    "ator\\Electrical_Circuit_Simulator\\Resources\\AmmeterCS.png";
-            this.pictureBox13.Location = new System.Drawing.Point(245, 508);
+            this.pictureBox13.ImageLocation = ".\\..\\..\\..\\Resources\\AmmeterCS.png";
+            this.pictureBox13.Location = new System.Drawing.Point(245, 652);
             this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(235, 77);
+            this.pictureBox13.Size = new System.Drawing.Size(235, 105);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox13.TabIndex = 21;
             this.pictureBox13.TabStop = false;
@@ -256,9 +249,7 @@
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 9;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.tableLayoutPanel1.RowCount = 7;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
@@ -270,7 +261,7 @@
             this.tableLayoutPanel1.TabIndex = 0;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint_2);
             // 
-            // CS
+            // Symbols
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -279,7 +270,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "CS";
+            this.Name = "Symbols";
             this.Text = "Circuit Symbols";
             this.Load += new System.EventHandler(this.CS_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

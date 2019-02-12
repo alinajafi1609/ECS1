@@ -31,12 +31,7 @@ namespace Electrical_Circuit_Simulator {
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
         internal CS() {
         }
-
-        internal void Show()
-        {
-            throw new NotImplementedException();
-        }
-
+        
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
